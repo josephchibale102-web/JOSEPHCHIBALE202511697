@@ -12,8 +12,11 @@ public class HelloJavaFX extends Application {
         Label message = new Label("Welcome Joseph Chibale!");
         Button button = new Button("Start");
         Button button2 = new Button("Reset");
-        button.setOnAction(event ->
+        button2.setOnAction(event ->
                 message.setText("Great! You clicked the button.")
+        );
+        button2.setOnAction(event ->
+                        message.setText("Welcome Joseph Chibale.")
         );
         VBox layout = new VBox(20);
         layout.setAlignment(Pos.CENTER);
