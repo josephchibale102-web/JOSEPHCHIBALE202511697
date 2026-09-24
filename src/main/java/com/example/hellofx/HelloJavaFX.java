@@ -9,15 +9,15 @@ import javafx.stage.Stage;
 public class HelloJavaFX extends Application {
     @Override
     public void start(Stage stage) {
-        Label message = new Label("Welcome to Joseph Chibale!");
-        Button startbutton = new Button("Start");
-        Button resetbutton = new Button("Reset");
-        startbutton.setOnAction(event ->
+        Label message = new Label("Welcome Joseph Chibale!");
+        Button button = new Button("Start");
+        Button button2 = new Button("Reset");
+        button.setOnAction(event ->
                 message.setText("Great! You clicked the button.")
         );
         VBox layout = new VBox(20);
         layout.setAlignment(Pos.CENTER);
-        layout.getChildren().addAll(message, startbutton);
+        layout.getChildren().addAll(message, button);
         Scene scene = new Scene(layout, 500, 300);
         stage.setTitle("My First JavaFX Application - 202511697");
         stage.setScene(scene);
